@@ -6,8 +6,10 @@ applications:
   memory: 1G
   instances: 1
   env:
+    GRANT_TYPE: client_credentials
     #REGISTRATION_SERVER_ENDPOINT: http://registration-pal-nitin-abhi.cfapps.io
   services:
   - tracker-backlog-database
   - tracker-service-registry
   - tracker-circuit-breaker-dashboard
+  - tracker-sso
